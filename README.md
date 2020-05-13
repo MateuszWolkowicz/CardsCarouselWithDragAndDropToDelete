@@ -8,3 +8,8 @@
 
 * _Drag and Drop to delete_
 * Change background while dragging
+
+![carousel](gifs/carousel.gif)
+![draganddrop](dragandgrop.gif)
+https://github.com/MateuszWolkowicz/CardsCarouselWithDragAndDropToDelete/blob/master/gifs/carousel.gif
+https://github.com/MateuszWolkowicz/CardsCarouselWithDragAndDropToDelete/blob/master/gifs/dragandgrop.gif
