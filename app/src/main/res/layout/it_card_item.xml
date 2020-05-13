@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="268dp"
+    android:layout_height="152dp"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/ivCardTopUpBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_card_background"
+        app:layout_constraintDimensionRatio="46:29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivWhiteDot"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_white_dot"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCardTopUpBackground"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivWhiteDot2"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_white_dot"
+        app:layout_constraintBottom_toBottomOf="@+id/ivWhiteDot"
+        app:layout_constraintStart_toEndOf="@id/ivWhiteDot" />
+
+    <ImageView
+        android:id="@+id/ivWhiteDot3"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_white_dot"
+        app:layout_constraintBottom_toBottomOf="@+id/ivWhiteDot2"
+        app:layout_constraintStart_toEndOf="@id/ivWhiteDot2" />
+
+    <ImageView
+        android:id="@+id/ivWhiteDot4"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_white_dot"
+        app:layout_constraintBottom_toBottomOf="@+id/ivWhiteDot3"
+        app:layout_constraintStart_toEndOf="@id/ivWhiteDot3" />
+
+    <TextView
+        android:id="@+id/tvAutoTopUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:maxLength="4"
+        android:textColor="@color/white_color"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivWhiteDot4"
+        app:layout_constraintStart_toEndOf="@id/ivWhiteDot4"
+        app:layout_constraintTop_toTopOf="@+id/ivWhiteDot4"
+        tools:text="9876" />
+
+    <ImageView
+        android:id="@+id/ivMasterCardLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_master_card_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAutoTopUp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
