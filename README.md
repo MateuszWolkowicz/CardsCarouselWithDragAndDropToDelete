@@ -9,5 +9,7 @@
 * _Drag and Drop to delete_
 * Change background while dragging
 
+Medium : https://medium.com/@wolkowicz.mateusz/cards-carousel-with-item-span-to-centre-drag-and-drop-to-delete-ec843e99a9df
+
 ![carousel](gifs/carousel.gif)
 ![draganddrop](gifs/dragandgrop.gif)
