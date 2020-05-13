@@ -7,7 +7,7 @@
     android:padding="8dp">
 
     <ImageView
-        android:id="@+id/ivCardTopUpBackground"
+        android:id="@+id/ivCardBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
@@ -25,7 +25,7 @@
         android:layout_marginBottom="20dp"
         android:scaleType="fitXY"
         android:src="@drawable/ic_white_dot"
-        app:layout_constraintBottom_toBottomOf="@+id/ivCardTopUpBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCardBackground"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -59,7 +59,7 @@
         app:layout_constraintStart_toEndOf="@id/ivWhiteDot3" />
 
     <TextView
-        android:id="@+id/tvAutoTopUp"
+        android:id="@+id/tvCardNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -78,7 +78,7 @@
         android:layout_marginEnd="20dp"
         android:scaleType="fitXY"
         android:src="@drawable/ic_master_card_logo"
-        app:layout_constraintBottom_toBottomOf="@+id/tvAutoTopUp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCardNumber"
         app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

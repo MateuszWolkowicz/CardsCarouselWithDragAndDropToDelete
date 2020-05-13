@@ -6,7 +6,7 @@
     android:padding="8dp">
 
     <ImageView
-        android:id="@+id/ivCardTopUpBackground"
+        android:id="@+id/ivCardBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
@@ -20,11 +20,9 @@
         android:id="@+id/ivPlusSign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/ivCardTopUpBackground"
-        app:layout_constraintStart_toStartOf="@+id/ivCardTopUpBackground"
+        app:layout_constraintStart_toStartOf="@+id/ivCardBackground"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_plus_sign_green" />
 

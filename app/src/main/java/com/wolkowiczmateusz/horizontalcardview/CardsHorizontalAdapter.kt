@@ -26,11 +26,11 @@ class CardsHorizontalAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         context = parent.context
         return when (viewType) {
             PLUS_TYPE_LEFT -> {
-                view = inflater.inflate(R.layout.it_debit_card_topup_plus_left, parent, false)
+                view = inflater.inflate(R.layout.it_debit_card_plus_left, parent, false)
                 PlusViewHolder(view)
             }
             PLUS_TYPE -> {
-                view = inflater.inflate(R.layout.it_debit_card_topup_plus, parent, false)
+                view = inflater.inflate(R.layout.it_debit_card_plus, parent, false)
                 PlusViewHolder(view)
             }
             else -> {
@@ -46,9 +46,9 @@ class CardsHorizontalAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             val viewHolder = holder as CardViewHolder
             viewHolder.tvCardNumbers.text = card.cardNumber?.takeLast(4)
             if (card.selected) {
-                viewHolder.ivCard.setImageDrawable(context.getDrawable(R.drawable.ic_card_background))
+                viewHolder.ivCardBackground.setImageDrawable(context.getDrawable(R.drawable.ic_card_background))
             } else {
-                viewHolder.ivCard.setImageDrawable(context.getDrawable(R.drawable.ic_card_background_alpha))
+                viewHolder.ivCardBackground.setImageDrawable(context.getDrawable(R.drawable.ic_card_background_alpha))
             }
             viewHolder.itemView.setOnClickListener {
                 itemSelected.invoke(card, position)
@@ -124,8 +124,8 @@ class CardsHorizontalAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     internal inner class CardViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var tvCardNumbers: TextView = itemView.findViewById(R.id.tvAutoTopUp)
-        var ivCard: ImageView = itemView.findViewById(R.id.ivCardTopUpBackground)
+        var tvCardNumbers: TextView = itemView.findViewById(R.id.tvCardNumber)
+        var ivCardBackground: ImageView = itemView.findViewById(R.id.ivCardBackground)
     }
 
     internal inner class PlusViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
