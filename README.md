@@ -1,0 +1,1 @@
+## Horizontal RecyclerView with item span to center and drag and drop to delete
